@@ -6,61 +6,63 @@
    <head>
       <meta charset = "utf-8">
       <title>Deitel Book Cover Viewer</title>
-      <link rel = "stylesheet" type = "text/css" href = "stylesheets/main.css">
-      <script type="text/javascript">
-         //preloading
-         if(document.images){
-            var fullImg = new Array(6);
-            for(var i = 0; i<fullImg.length; i++)
-               fullImg[i] = new Image(277,373);
-            fullImg[0].src="fullsize/jhtp.jpg";
-            fullImg[1].src="fullsize/iw3htp.jpg";
-            fullImg[2].src="fullsize/cpphtp.jpg";
-            fullImg[3].src="fullsize/jhtplov.jpg";
-            fullImg[4].src="fullsize/cpphtplov.jpg";
-            fullImg[5].src="fullsize/vcsharphtp.jpg";
-         }
-            
-         var inter = null;
-         var w;
+      <link rel = "stylesheet" type = "text/css" href = "main.css">
       
-         function display(n){
-            //choose the corresponding full-size picture to display
+      <script type="text/javascript" >
+      //preloading
+      if(document.images)
+         var fullImg=new Array(6);
+         for (var i=0; i<fullImg.length;i++)
+            fullImg[i] =new Image(277,373);
+         fullImg[0].src="fullsize/jhtp.jpg";
+         fullImg[0].alt="Java How to Program";
+         fullImg[1].src="fullsize/iw3htp.jpg";
+         fullImg[2].src="fullsize/cpphtp.jpg";
+      fullImg[3].src="fullsize/jhtplov.jpg";
+      fullImg[4].src="fullsize/cpphtplov.jpg";
+      fullImg[5].src="fullsize/vcsharphtp.jpg";
+         
+      var w;
+      var inter=null
+            
+         
+      function display(n){
+      //choose the corresponding full-size picture to display
          document.getElementById("imgCover").src=fullImg[n].src;
+         
+         n++;
+         if(n>=6) n=0;
+         
          //how to display
-         w = 0;
-         inter = setInterval("expand()", 20);
-         }
-         
-         function expand(){
+          w=0;
+         inter=setInterval("expand()", 20);
+          }
+          function expand() {
             w+=3;
-            document.getElementById("imgCover").style="width:" + w + "px;height:" + (373/277*w) + "px";
-            if(w>=277){
+            document.getElementById("imgCover").style="width"+w+"px;height:"+(373/277*w)+"px";
+            if(w>=277)
                clearInterval(inter);
-            }
-         }
-         
-         
+          }
+                         
       </script>
    </head>
    <body>
       <div id = "mainimg">
-         <img id = "imgCover" src = "fullsize/jhtp.jpg" 
-            alt = "Full cover image">
+         <img id = "imgCover" src = "fullsize/jhtp.jpg" alt = "Full cover image">
       </div>
       <div id = "thumbs">
          <img src = "thumbs/jhtp.jpg" id = "jhtp"
             alt = "Java How to Program cover" onclick="display(0)">
          <img src = "thumbs/iw3htp.jpg" id = "iw3htp"
-            alt = "Internet & World Wide Web How to Program cover"  onclick="display(1)">
+            alt = "Internet & World Wide Web How to Program cover"onclick="display(1)">
          <img src = "thumbs/cpphtp.jpg" id = "cpphtp"
-            alt = "C++ How to Program cover"  onclick="display(2)">
+            alt = "C++ How to Program cover" onclick="display(2)">
          <img src = "thumbs/jhtplov.jpg" id = "jhtplov"
-            alt = "Java How to Program LOV cover"  onclick="display(3)">
+            alt = "Java How to Program LOV cover" onclick="display(3)">
          <img src = "thumbs/cpphtplov.jpg" id = "cpphtplov"
-            alt = "C++ How to Program LOV cover"  onclick="display(4)">
+            alt = "C++ How to Program LOV cover"onclick="display(4)">
          <img src = "thumbs/vcsharphtp.jpg" id = "vcsharphtp"
-            alt = "Visual C# How to Program cover"  onclick="display(5)">
+            alt = "Visual C# How to Program cover"onclick="display(5)">
       </div>
    </body>
 </html>
