@@ -22,7 +22,7 @@
       	
       	}
       
-      	function display(){
+      	function display(n){
       		//choose the corresponding full-size picture to display
         	document.getElementById("imgCover").src=fullImg[n].src;
         	n++;
