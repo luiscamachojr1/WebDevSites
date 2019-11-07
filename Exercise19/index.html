@@ -24,9 +24,19 @@
             fullImg[5].src="fullsize/vcsharphtp.jpg";
            
             }
+
+      var inter=null;
+      var w; 
+
       function display(n){
-      document.getElementById("imgCover").src=fullsize[n].src; 
-     
+         document.getElementById("imgCover").src=fullImg[n].src;
+         //how to display 
+         var w=0;
+         var inter=setInterval("expand()", 20);
+      }
+
+      function expand() {
+
       }
       //after preloading the display function can be updated into
      
