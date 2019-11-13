@@ -3,28 +3,9 @@
 <head>
     <title>Assignment 3</title>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<link rel="stylesheet" type="text/css" href="main.css">
-<script type="text/javascript">
-var banners = ["images/banner1.gif","images/banner2.gif","images/banner3.gif","images/banner4.gif" ]
-var i=0;
-var renew= setInterval(function(){
-    document.getElementById("banner").src = banners[i];
-    i++;
-    if( i ==4)
-        i=0;
-},3000);
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="index.js"></script>
 
-function display(s){
-    document.getElementById("mainimg").src="images/"+s+ ".jpg";
-    if(s !="placerholder"){
-        document.getElementById("msg").innerHTML=s;
-    }
-    if(s == "placeholder")
-        document.getElementById("msg").innerHTML="Move your mouse over one of the icons to see an enlarged image";
-       
-}
-
-</script>
 </head>
 <body>
     <div class="content">
@@ -39,7 +20,7 @@ function display(s){
         </div>
         <div class="mainImg">
             <img id="mainimg" src="images/placeholder.jpg" >
-            <p id="msg" ">Move your mouse over one of the icons to see an enlarged image</p>
+            <p id="msg">Move your mouse over one of the icons to see an enlarged image</p>
         </div>
     </div>
 </body>
