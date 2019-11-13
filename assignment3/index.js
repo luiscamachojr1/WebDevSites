@@ -15,4 +15,4 @@ function display(s){
     if(s == "placeholder")
         document.getElementById("msg").innerHTML="Move your mouse over one of the icons to see an enlarged image";
        
-}
+};
