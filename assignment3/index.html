@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 3</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+var banners = ["images/banner1.gif","images/banner2.gif","images/banner3.gif","images/banner4.gif" ]
+var i=0;
+var renew= setInterval(function(){
+    document.getElementById("banner").src = banners[i];
+    i++;
+    if( i ==4)
+        i=0;
+},3000);
+
+function display(s){
+    document.getElementById("mainimg").src="images/"+s+ ".jpg";
+    if(s !="placerholder"){
+        document.getElementById("msg").innerHTML=s;
+    }
+    if(s == "placeholder")
+        document.getElementById("msg").innerHTML="Move your mouse over one of the icons to see an enlarged image";
+       
+}
+
+</script>
+</head>
+<body>
+    <div class="content">
+        <img id="banner" src="images/banner1.gif" width="468" height="60">
+
+        <div id="thumbs">
+            <img src="images/FrenchQuarter_small.jpg" id="FrenchQuarter" onmouseover="display('FrenchQuarter')" onmouseout="display('placeholder')">
+            <img src="images/GoldenGateBridge_small.jpg" id="GoldenGateBridge" onmouseover="display('GoldenGateBridge')" onmouseout="display('placeholder')">
+            <img src="images/NazarethBay_small.jpg" id="NazarethBay" onmouseover="display('NazarethBay')" onmouseout="display('placeholder')">
+            <img src="images/TheAlamo_small.jpg" id="TheAlamo" onmouseover="display('TheAlamo')" onmouseout="display('placeholder')">
+
+        </div>
+        <div class="mainImg">
+            <img id="mainimg" src="images/placeholder.jpg" >
+            <p id="msg" ">Move your mouse over one of the icons to see an enlarged image</p>
+        </div>
+    </div>
+</body>
+</html>
