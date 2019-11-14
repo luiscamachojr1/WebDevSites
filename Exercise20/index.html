@@ -12,7 +12,7 @@
       if (username!=null && username!="")
          setCookie("username",username,365);
    }
-
+}
 
 function setCookie(c_name,value,exdays) {
    var exdate=new Date();
@@ -38,9 +38,12 @@ function getCookie(c_name) {
    return c_value;
 }
 
-window.addEventListener("load", checkCookie, false);
-}
+	window.addEventListener("load", checkCookie, false);
+
 </script>
 
 </head>
+<body>
+	This website is to test how to store and retrieve a cookie
+</body>
 </htlm>
