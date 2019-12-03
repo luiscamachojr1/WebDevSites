@@ -1,37 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+
 <head>
-<title>CSS Website Layout</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+  <title>DMB</title>
+  <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+  
+
+<script>
+    function validateForm()
+    {
+    
+    var x=document.forms["myForm"]["name"].value;
+    if (x==null || x=="")
+  {
+  alert("Name must be filled out");
+  return false;
+  }
+    
+var y=document.forms["myForm"]["email"].value;
+var atpos=y.indexOf("@");
+var dotpos=y.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length)
+  {
+  alert("Not a valid e-mail address");
+  return false;
+}
+  var z=document.forms["myForm"]["Phone number"].value;
+    if (z==null || z!=10)
+  {
+  alert("Please insert Phone number in format 1234567890");
+  return false;
+  }
+}
+</script>
 
 </head>
-<body>
 
-<div class="header">
-  <h1>Header</h1>
-</div>
- <div id="menubar">
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html"><span class="logo_color">Dallas Mountain Biking</span></a></h1>
+          <h2>Get on your bike and ride!</h2>
+        </div>
+      </div>
+      <div id="menubar">
         <ul id="menu">
      
           <li class="selected"><a href="index.html">Home</a></li>
-          <li><a href="aboutme.html">about me</a></li>
-          <li><a href="posts.html">test</a></li>
-          <li><a href=".html">Tips</a></li>
+          <li><a href="Trails.html">Trails</a></li>
+          <li><a href="Gear.html">Gear</a></li>
+          <li><a href="Tips.html">Tips</a></li>
           <li><a href="Local.html">Local Shops</a></li>
           <li><a href="Contact.html" > Contact Us</a></li>
         </ul>
       </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        
+        <h3>Upcoming Events</h3>
+        <h4>New Rider Workshop</h4>
+        <h5>January 1, 2014</h5>
+        <p>Whether you are just beginning to ride or just want to hone your skills, our experts can help!<br /></p>
+              <span id="countdown"></span>       
+        <script type="text/javascript" >
 
-      <h2>JavaScript new Date()</h2>
+        
+          var target_date = new Date("Jan 1, 2014").getTime();
+ 
 
-<p id="demo"></p>
+          var days, hours, minutes, seconds;
+ 
 
-<script>
-var d = new Date();
-document.getElementById("demo").innerHTML = d;
+        var countdown = document.getElementById("countdown");
+ 
+
+        setInterval(function () {
+ 
+    
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+ 
+    
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+     
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+     
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+     
+   
+    countdown.innerHTML = days + "d, " + hours + "h, "
+    + minutes + "m, " + seconds + "s"+" until this event";  
+ 
+}, 1000);
 </script>
+        <h4>Social Ride at River Legacy</h4>
+        <h5>February 1, 2014</h5>
+        <p> Come out and enjoy a social ride with other members.</p>
+        
+        <h3>Bike Pictures</h3>
+        <script language="JavaScript"> 
+        var i = 0; var path = new Array(); // LIST OF IMAGES 
+        path[0] = "Image/Bike.JPG";
+        path[1] = "Image/BikeJoe.JPG"; 
+        path[2] = "Image/Rangers.JPG";
+        function swapImage() { document.slide.src = path[i];
+         if(i < path.length - 1) i++; else i = 0; setTimeout("swapImage()",3000); } 
+        window.onload=swapImage; </script>
+        <img height="200" name="slide" src="Bike.JPG" width="300" />
+       
 
+
+        <h3>Join our text and email club.</h3>
+       
+  <form name="myForm" method = "post" action = "http://uta.edu" onsubmit="return validateForm()")>
+    <p>Sign up to get notifications of trail status and social rides.</p>
+    <label> Name: </label><br />
+    <input type ="text" name = "name" size = "10" max= "25" />
+    <br />
+    <label> Phone number: </label>
+    <input type="text" name ="Phone number" size="12"   />
+  
+    <br />
+    <label> Email Address: </label>
+    <input type="text" name = "email" size="20" />
+    <br />
+    <label> What kind of notifications would you like?</label><br />
+    <input type="checkbox" name="like" value="Text" checked="true">
+      <label>Text</label>
+    <input type="checkbox" name="like" value="Email" checked="true">
+      <label>Email </label>
+      <br />
+      
+    <label>What is your skill level?</label> <br>
+    <input type ="radio" name="refer" value="Beginner" checked>
+      <label> Beginner</label> <br>
+    <input type ="radio" name="refer" value="Average">
+      <label> Average</label><br>
+    <input type ="radio" name="refer" value="Expert">
+      <label> Expert</label><br>
+    
+    <p />
+
+    
+  <p />
+  <input type = "submit" value="Submit">
+  <input type ="reset" value="Cancel">
+      
+  
+  </form>
+      </div>
+      <div id="content">
+       
+        <h1>Welcome to Dallas Mountain Biking!</h1>
+        <p>Mountain biking can be a great opportunity for you to get outside, enjoy the weather, and get some exercise. 
+        Through physical exercise and the thrill of adrenaline rushes as you power up that hill or cruise down the slope, 
+        mountain biking is an excellent way to clear your mind, and enjoy the small things in life.</p> 
+        <p>Our site is committed to informing Dallas/Fort Worth residents of the excellent mountain biking trails we have 
+        been blessed with in the area, and educating members on trail safety while enhancing your mountain bike experience!
+        Head over to our <a href="Tips.html">tips</a> page to get better!</p>
+        Find some <a href="Trails.html">trails</a> near you!</p>
+        <p>Whether you are an experienced rider looking to prepare for a competitive race or a beginner 
+        looking to get into the sport, the Dallas Mountain Biking website will help you along the way!</p>
+      </div>
+    </div>
+    
+  </div>
 </body>
 </html>
