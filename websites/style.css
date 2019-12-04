@@ -1,13 +1,13 @@
 .column1
 { float: right;
   width: 190px;
-  padding: 0 15px 20px 15px;}
+  padding: 0 22px 30px 15px;}
 .column2
 { float: left;
   width: 190px;
-  padding: 0 15px 20px 15px;}
+  padding: 0 22px 30px 15px;}
  h1, h2, h3, h4, h5, h6 
 { font: normal 175% comic-sans, arial, sans-serif;
-  color: #FFA500;
+  color: #0020ff;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;}
