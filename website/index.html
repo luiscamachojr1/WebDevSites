@@ -58,6 +58,18 @@ if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length)
       </div>
     </div>
     <div id="site_content">
+      <div class="sidebar2">
+        <h3>Bike Pictures</h3>
+        <script language="JavaScript"> 
+        var i = 0; var path = new Array(); // LIST OF IMAGES 
+        path[0] = "Image/me.png";
+        path[1] = "Image/events.jpeg"; 
+        function swapImage() { document.slide.src = path[i];
+         if(i < path.length - 1) i++; else i = 0; setTimeout("swapImage()",3000); } 
+        window.onload=swapImage; </script>
+        <img height="200" name="slide" src="me.png" width="300" />
+       
+      </div>
       <div class="sidebar">
         
         <h3>tweet feed</h3>
@@ -107,16 +119,7 @@ if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length)
         <h5>Nov 11, 2019</h5>
         <p> One night I was craving a chocolate dipped cone. And as I pulled up to the window, the “machine broke”. Now I just drive to braum’s</p>
         
-        <h3>Bike Pictures</h3>
-        <script language="JavaScript"> 
-        var i = 0; var path = new Array(); // LIST OF IMAGES 
-        path[0] = "Image/me.png";
-        path[1] = "Image/events.jpeg"; 
-        function swapImage() { document.slide.src = path[i];
-         if(i < path.length - 1) i++; else i = 0; setTimeout("swapImage()",3000); } 
-        window.onload=swapImage; </script>
-        <img height="200" name="slide" src="me.png" width="300" />
-       
+        
 
 
         <h3>Would you like to join my discord server?</h3>
