@@ -1,6 +1,6 @@
 //preloading
 if(document.images) {
-      var fullImg=new Array(6);
+      var fullImg=new Array(3);
       for(var i=0;i<fullImg.length;i++)
       fullImg[i] = new Image(277,373);
       fullImg[0].src="fullsize/jhtp.jpg";
