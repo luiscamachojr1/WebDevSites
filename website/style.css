@@ -173,7 +173,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   background: transparent url(Image/transparent_light.png) repeat;} 
 
 .sidebar
-{ float: right;
+{ float: left;
   width: 190px;
   padding: 0 15px 20px 15px;}
 
