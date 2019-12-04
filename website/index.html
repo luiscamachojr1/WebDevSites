@@ -58,6 +58,18 @@ if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length)
       </div>
     </div>
     <div id="site_content">
+      <div class="sidebar2">
+        <h3>Past pictures</h3>
+        <script language="JavaScript"> 
+        var i = 0; var path = new Array(); // LIST OF IMAGES 
+        path[0] = "Image/me.png";
+        path[1] = "Image/events.jpeg"; 
+        function swapImage() { document.slide.src = path[i];
+         if(i < path.length - 1) i++; else i = 0; setTimeout("swapImage()",3000); } 
+        window.onload=swapImage; </script>
+        <img height="200" name="slide" src="me.png" width="300" />
+       
+      </div>
 
       <div class="sidebar">
         
@@ -163,18 +175,7 @@ if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length)
         <p>Whether you are an experienced rider looking to prepare for a competitive race or a beginner 
         looking to get into the sport, the Dallas Mountain Biking website will help you along the way!</p>
       </div>
-    <div class="sidebar2">
-        <h3>Bike Pictures</h3>
-        <script language="JavaScript"> 
-        var i = 0; var path = new Array(); // LIST OF IMAGES 
-        path[0] = "Image/me.png";
-        path[1] = "Image/events.jpeg"; 
-        function swapImage() { document.slide.src = path[i];
-         if(i < path.length - 1) i++; else i = 0; setTimeout("swapImage()",3000); } 
-        window.onload=swapImage; </script>
-        <img height="200" name="slide" src="me.png" width="300" />
-       
-      </div>
+    
     </div>
     
   </div>
