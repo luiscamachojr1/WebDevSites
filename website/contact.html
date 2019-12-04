@@ -32,52 +32,13 @@
     <div id="content">
 
         <h1>Contact me</h1>
-        <form  method="post" action="http://uta.edu">
-      <h1>Feeback Form </h1>
-      <input type="hidden" name="recipient" value="email@uta.edu" />
-      
-      <p>Please fill out this form to help us improve our site.</p>
-
-      <label>Name: </label>
-      <input type="text" name="user_name" size="20" max="30" vaule="user name"/>
-      
-      <p>Comments: </p>
-      <textarea name="comments" row="4" cols="30" />Enter comments here.</textarea>
-      <p>Email: </p>
-      <input type="email" name="email" size="25" >
-    <p></p>
-    <p>Things you like:</p>
-    <label>Site design</label>&nbsp;
-      <input type="checkbox" name="liked" value="Design">
-      <label>Links</label>
-      <input type="checkbox" name="liked" value="Design">
-      <label>Ease of use</label>
-      <input type="checkbox" name="liked" value="Design">
-      <label>Images</label>
-      <input type="checkbox" name="liked" value="Design">
-      <label>Source Code</label>
-    
-    <p>How did you get our site</p>
-    <input type="radio" name="access" value="Search" checked>
-    <label>Search engine</label>
-    <input type="radio" name="access" value="Search" checked>
-    <label>External Link</label>
-    <input type="radio" name="access" value="Search" checked>
-    <label>Search engine</label><input type="radio" name="access" value="Search" checked>
-    <label>Search engine</label><input type="radio" name="access" value="Search" checked>
-      
-    
-<p></p>
-      <select name="rating">
-        <option selected>Amazing</option>
-        <option selected>Very Good</option>
-        <option selected>ok</option>
-        
-        
-      </select>
-    <p></p>
-      <input type="submit" value="Submit">
-			<input type ="reset" value="Cancel">
+        <form name="contactForm" method="post" action="http://uta.edu">
+          
+            <p><p>Name</p><input type="text" name="name" value="" /></p>
+            <p><p>Email Address</p><input  type="text" name="email" value="" /></p>
+            <p><p>Message</p><textarea rows="8" cols="50" name="comment"></textarea></p>
+									<input type = "submit" value="Submit">
+									<input type ="reset" value="Cancel">
           
         </form>
   </div>
