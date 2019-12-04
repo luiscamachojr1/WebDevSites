@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>DMB</title>
+  <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+			
+			<script type="text/javascript">
+<!--
+//preload images
+var image1=new Image()
+image1.src="Image/Dorba.png"
+var image2=new Image()
+image2.src="Image/MtbLife.png"
+var image3=new Image()
+image3.src="Image/NTMBP.jpg"
+//-->
+</script>
+
+
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+         <h1><a href="index.html"><span class="logo_color">Dallas Mountain Biking</span></a></h1>
+          <h2>Get on your bike and ride!</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Trails.html">Trails</a></li>
+          <li><a href="Gear.html">Gear</a></li>
+          <li><a href="Tips.html">Tips</a></li>
+          <li class="selected"><a href="Local.html">Local Shops</a></li>
+									 <li><a href="Contact.html" > Contact Us</a></li>        
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h3>Upcoming Events</h3>
+        <h4>New Rider Workshop</h4>
+        <h5>January 1, 2014</h5>
+        <p>Whether you are just beginning to ride or just want to hone your skills, our experts can help!<br /></p>
+							<span id="countdown"></span>       
+        <script type="text/javascript" >
+
+        
+					var target_date = new Date("Jan 1, 2014").getTime();
+ 
+
+					var days, hours, minutes, seconds;
+ 
+
+				var countdown = document.getElementById("countdown");
+ 
+
+				setInterval(function () {
+ 
+    
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+ 
+    
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+     
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+     
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+     
+   
+    countdown.innerHTML = days + "d, " + hours + "h, "
+    + minutes + "m, " + seconds + "s"+" until this event";  
+ 
+}, 1000);
+</script>
+        <h4>Social Ride at River Legacy</h4>
+        <h5>February 1, 2014</h5>
+        <p> Come out and enjoy a social ride with other members.</p>
+        <h3>Check out our sponsors!</h3>
+         <a href="javascript:slidelink()">
+<img src="Dorba.png" name="slide" border="0" width="200" height="112" /></a>
+<script type="text/javascript">
+<!--
+var step=1
+var whichimage=1
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=eval("image"+step+".src")
+whichimage=step
+if (step<3)
+step++
+else
+step=1
+setTimeout("slideit()",3000)
+}
+slideit()
+function slidelink(){
+if (whichimage==1)
+window.location="http://dorba.org"
+else if (whichimage==2)
+window.location="http://mtbforlife.com"
+else if (whichimage==3)
+window.location="http://ntmbp.org"
+}
+//-->
+</script>
+        
+      </div>
+      <div id="content">
+        <table>
+<tr>
+<td><img class="smaller" src="Image/Front.JPG" alt="Front" ></td>
+<td>Located in the heart of 
+			Downtown Arlington, a former <br>
+			student turned business owner <br>
+			caters to the needs of students<br>
+		 by being on call for bicycle tire <br>
+		 delivery and repair and leads<br>
+		 public rides on Monday nights. </td>
+<td>201 N Center St,<br>
+				Arlington, TX
+				(682)232-3836<br>
+				<a href="http://frontandcentercyclery.com" >			
+				Front & Center</a></td>
+</tr>
+<tr>
+<td><img class="smaller" src="Image/Mans.jpg" alt="Mans" ></td>
+<td>Former fire fighter,Gary Scott, <br>
+				 saw a need for a local bike shop <br>
+					and	decided to open in Mansfield.<br>
+					Gary 	and the crew will satisfy <br>
+					all your bike needs!</td>
+	<td>121 W Debbie Ln,<br>
+					Mansfield, TX
+					(817)473-8200<br>
+					<a href="http://grapevinebikecenter.com">
+					Mansfield Bike</a> </td>
+</tr>
+<tr>
+<td><img class="smaller" src="Image/Inc.jpg" alt="Inc" ></td>
+<td >Bicycles, Inc is located in <br>
+				Ft. Worth and offers the selection <br>
+				of a large 	bicycle retailer while <br>
+				still offering personal customer <br>
+				service to customers that give <br>				
+				this large chain a small shop feel.</td>
+	<td>5125 Granbury Rd,<br>
+					Fort Worth, TX <br>
+					(817)292-2911<br>
+					<a href="http://bicyclesinc.com" >
+					Bicycles Inc.</a>
+	</td>
+</tr>
+</table>
+        
+       
+        <p><br /><br /</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

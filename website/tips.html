@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>DMB</title>
+  <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html"><span class="logo_color">Dallas Mountain Biking</span></a></h1>
+          <h2>Get on your bike and ride!</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Trails.html">Trails</a></li>
+          <li><a href="Gear.html">Gear</a></li>
+          <li class="selected"><a href="Tips.html">Tips</a></li>
+          <li><a href="Local.html">Local Shops</a></li>
+           <li><a href="Contact.html" > Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Upcoming Events</h3>
+        <h4>New Rider Workshop</h4>
+        <h5>January 1, 2014</h5>
+        <p>Whether you are just beginning to ride or just want to hone your skills, our experts can help!<br /></p>
+							<span id="countdown"></span>       
+        <script type="text/javascript" >
+
+        
+					var target_date = new Date("Jan 1, 2014").getTime();
+ 
+
+					var days, hours, minutes, seconds;
+ 
+
+				var countdown = document.getElementById("countdown");
+ 
+
+				setInterval(function () {
+ 
+    
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+ 
+    
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+     
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+     
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+     
+   
+    countdown.innerHTML = days + "d, " + hours + "h, "
+    + minutes + "m, " + seconds + "s"+" until this event";  
+ 
+}, 1000);
+</script>
+        <h4>Social Ride at River Legacy</h4>
+        <h5>February 1, 2014</h5>
+        <p> Come out and enjoy a social ride with other members.</p>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Tips to make you a better rider</h1>
+        	<h3>Hill Climbing</h3>
+        	<p>
+        	The two most important things to remember when climbing hills are
+        	<br><Strong><ul>
+        	<li>1. Staying Seated</li><br>
+        	<li>				2. Trying Again</li></Strong><br>
+
+As a beginner, these are the two things that can really help grow both your leg strength and your mental tenacity for hills.  And while you�re focusing on those two rules your hill climbing technical ability will fall into place.
+Remember that the goal is simply to get you to the top of more hills.  Never mind the speed at which you get there.  Pedal patiently.  Just focus on growing those legs and growing your desire to push on.
+
+
+        	<h3>Shifting Gears</h3>
+								<p>
+								Follow these rules to develop good shifting habits that will enhance your riding style and efficiency in no time
+								<ul>
+										<li> Never force the chain with your shift lever pressure, but rather think of shifting as �guiding� and �allowing� the chain to change place </li>
+										<li> Whether changing to a harder gear to speed up or an easier gear to slow down, always keep pedaling during the shift, but back off your pedaling force just prior to every shift and until the shift completes </li>
+										<li>  Anticipate the trail conditions ahead of you and change to the right gears in advance.  This will help you maintain as much momentum as possible, increasing your riding efficiency and speed </li>
+										<li>  For hill climbing in particular, make sure you change to the easier gears just before you think you need to.  This will help you keep as much momentum as possible and are back on that next gear with smooth pedal power at the right time. If you wait till you have to change gears it�s too late! </li>
+										<li>  Lubricate your drive train and gear shifter cables regularly with good quality mountain bike chain oil</li>
+								</ul>										
+										</p>
+									
+										<h3>General Etiquette</h3>
+										<ul>
+												<li><b>	Respect: </b>It�s a simple concept: if you offer respect, you are more likely to receive it.
+										 Education with friendly respect will diminish negative encounters on the trail for all users. </li>
+												<li><b>Communication:</b> Let folks know you�re there � before you�re there. For bikers and hikers; make yourself known. A simple �Howdy� works to get attention. </li>
+									 			<li><b>Revere the Resource:</b> Mountain biking presents unsurpassed opportunities to enjoy the landscape. Help protect your accessibility by playing nicely with your neighbors and treating trails with reverence. Always practice Leave No Trace ethics and pitch in to give back � pick up trash, volunteer on a trail project or become a member of your local trail club. Take action and get involved today.</li>						
+									 					 
+										</ul>       		
+       		 </div>
+    </div>
+
+  </div>
+</body>
+</html>

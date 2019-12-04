@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>DMB</title>
+  <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html"><span class="logo_color">Dallas Mountain Biking</span></a></h1>
+          <h2>Get on your bike and ride!</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li class="selected"><a href="Trails.html">Trails</a></li>
+          <li><a href="Gear.html">Gear</a></li>
+          <li><a href="Tips.html">Tips</a></li>
+          <li><a href="Local.html">Local Shops</a></li>
+           <li><a href="Contact.html" > Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h3>Upcoming Events</h3>
+        <h4>New Rider Workshop</h4>
+        <h5>January 1, 2014</h5>
+        <p>Whether you are just beginning to ride or just want to hone your skills, our experts can help!<br /></p>
+							<span id="countdown"></span>       
+        <script type="text/javascript" >
+
+        
+					var target_date = new Date("Jan 1, 2014").getTime();
+ 
+
+					var days, hours, minutes, seconds;
+ 
+
+				var countdown = document.getElementById("countdown");
+ 
+
+				setInterval(function () {
+ 
+    
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+ 
+    
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+     
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+     
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+     
+   
+    countdown.innerHTML = days + "d, " + hours + "h, "
+    + minutes + "m, " + seconds + "s"+" until this event";  
+ 
+}, 1000);
+</script>
+        <h4>Social Ride at River Legacy</h4>
+        <h5>February 1, 2014</h5>
+        <p> Come out and enjoy a social ride with other members.</p>
+      </div>
+      <div id="content">
+       
+        
+        <h1>Local Trails</h1>
+        <p>Check out some of our local trails in the Dallas/Fort Worth Area</p>
+        <table style="width:100%; border-spacing:0;">
+          <tr><th>Trail Name</th><th>Difficulty</th><th>Location</th><th>Park Hours</th></tr>
+          <tr><td>River Legacy</td><td>Easy</td><td>Arlington</td><td>30 minutes before sunrise-30 minutes after sunset</td></tr>
+        		<tr><td>Big Cedar</td><td>Expert</td><td>Cedar Hill</td><td>30 minutes before sunrise-30 minutes after sunset</td></tr>
+        		<tr><td>Cedar Hill State Park</td><td>Moderate</td><td>Cedar Hill</td><td>6 AM- 9 PM</td></tr>
+        		<tr><td>North Shore</td><td>Expert</td><td>Grapevine</td><td>30 minutes before sunrise-30 minutes after sunset</td></tr>
+        		<tr><td>Boulder Park</td><td>Moderate</td><td>Oak Cliff</td><td>30 minutes before sunrise-30 minutes after sunset</td></tr>
+
+        		
+                                                                      
+        </table>
+        
+       
+      </div>
+    </div>
+  </div>
+</body>
+</html>

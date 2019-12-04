@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>DMB</title>
+  <link rel="stylesheet" type="text/css" href="style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html"><span class="logo_color">Dallas Mountain Biking</span></a></h1>
+          <h2>Get on your bike and ride!</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Trails.html">Trails</a></li>
+          <li class="selected"><a href="Gear.html">Gear</a></li>
+          <li><a href="Tips.html">Tips</a></li>
+          <li><a href="Local.html">Local Shops</a></li>
+           <li><a href="Contact.html" > Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <h3>Upcoming Events</h3>
+        <h4>New Rider Workshop</h4>
+        <h5>January 1, 2014</h5>
+        <p>Whether you are just beginning to ride or just want to hone your skills, our experts can help!<br /></p>
+							<span id="countdown"></span>       
+        <script type="text/javascript" >
+
+        
+					var target_date = new Date("Jan 1, 2014").getTime();
+ 
+
+					var days, hours, minutes, seconds;
+ 
+
+				var countdown = document.getElementById("countdown");
+ 
+
+				setInterval(function () {
+ 
+    
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+ 
+    
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+     
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+     
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+     
+   
+    countdown.innerHTML = days + "d, " + hours + "h, "
+    + minutes + "m, " + seconds + "s"+" until this event";  
+ 
+}, 1000);
+</script>
+        <h4>Social Ride at River Legacy</h4>
+        <h5>February 1, 2014</h5>
+        <p> Come out and enjoy a social ride with other members.</p>
+      </div>
+    <h2>Suggested gear</h2>
+    
+    
+				<table>
+<tr>
+<td><img class="smaller" src="Image/Helmet.jpg" alt="Helmet" /></td>
+<td>Though not enforced, most all trails require riders to wear
+          helmets. Be sure to swing by your local bike shop to pick up
+          a stylish, certified helmet!
+        </td>
+</tr>
+<tr>
+<td><img class="smaller" src="Image/Tube.jpg" alt="Tube" /></td>
+<td>Let's face it, flats are inevitable on the rugged off road course.
+        Be prepared with a spare tube to keeping you rolling!</td>
+</tr>
+<tr>
+<td><img class="smaller" src="Image/Pump.jpg" alt="Pump" /></td>
+<td>What use is a spare tube without a pump? A compact pump such as the one
+        pictured fits snug on the bicycle and if (and when)you have a flat,
+        or just experience a loss of air, you can be prepared!</td>
+</tr>
+<tr>
+<td><img class="smaller" src="Image/FirstAid.jpg" alt="FirstAid" /></td>
+<td>Everyone thinks riding a bicycle is simple, but let's face it, off road
+        mountain biking features steep inclines and drops, with scattered roots, rocks,
+        and even critters on the trail. Prepare for the worst with a basic compact first
+        aid kit. Suggested materials are: alcohol sanitizer, bandages and wraps, and 
+        snake venom medication.</td>
+</tr>
+<tr>
+<td><img class="smaller" src="Image/Camel.jpg" alt="Camel" /></td>
+<td>				Always remember to stay hydrated while on the trail! Mountain biking
+        is a strenuous activity and much water can be excreted from the body in
+        the form of sweat. Always take plenty of water with you when you ride, 
+        atleast two liters, and maybe more if you choose to make the ride an all 
+        day event. A camel back such as the one pictured is handy as it allows 
+        the rider to maintain their hydration, without slowing down the pace and 
+        also allows for storage of tools and snacks.</td>
+</tr>
+</table>    
+        
+    </div>
+  </div>
+</body>
+</html>
