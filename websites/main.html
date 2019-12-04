@@ -41,6 +41,84 @@
  
 @hanukkahjambore
   for an amazing event. It was really fun to implement the player cards for every game. Shoutout to the streamers for an amazing job, this weekend. Hopefully I’ll see y’all around too soon.<br /></p>
+  <script type="text/javascript" >
+
+        
+          var target_date = new Date("Jan 1, 2014").getTime();
+ 
+
+          var days, hours, minutes, seconds;
+ 
+
+        var countdown = document.getElementById("countdown");
+ 
+
+        setInterval(function () {
+ 
+    
+    var current_date = new Date().getTime();
+    var seconds_left = (target_date - current_date) / 1000;
+ 
+    
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+     
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+     
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+     
+   
+    countdown.innerHTML = days + "d, " + hours + "h, "
+    + minutes + "m, " + seconds + "s"+" until this event";  
+ 
+}, 1000);
+</script>
+        <h4>@metic Lion</h4>
+        <h5>Nov 11, 2019</h5>
+        <p> One night I was craving a chocolate dipped cone. And as I pulled up to the window, the “machine broke”. Now I just drive to braum’s</p>
+        
+        
+
+
+        <h3>Would you like to join my discord server?</h3>
+         <form name="myForm" method = "post" action = "http://uta.edu" onsubmit="return validateForm()")>
+    <p>Join my personal discord server for better updates!</p>
+    <label> Name: </label><br />
+    <input type ="text" name = "name" size = "10" max= "25" />
+    <br />
+    <label> Phone number: </label>
+    <input type="text" name ="Phone number" size="12"   />
+  
+    <br />
+    <label> Email Address: </label>
+    <input type="text" name = "email" size="20" />
+    <br />
+    <label> What kind of notifications would you like?</label><br />
+    <input type="checkbox" name="like" value="Text" checked="true">
+      <label>Text</label>
+    <input type="checkbox" name="like" value="Email" checked="true">
+      <label>Email </label>
+      <br />
+      
+    <label>What color do you want your name to be?</label> <br>
+    <input type ="radio" name="refer" value="Beginner" checked>
+      <label> red</label> <br>
+    <input type ="radio" name="refer" value="Average">
+      <label> blue</label><br>
+    <input type ="radio" name="refer" value="Expert">
+      <label> green</label><br>
+    
+    <p />
+
+    
+  <p />
+  <input type = "submit" value="Submit">
+  <input type ="reset" value="Cancel">
+      
+  
+  </form>
 </div>
             
 </body>
