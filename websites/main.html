@@ -21,33 +21,26 @@
        </div>
        <div id="siteinfo">
         <div class="column1">
-          <script type="text/javascript">
-            if(document.images) {
-      var fullImg=new Array(6);
-      for(var i=0;i<fullImg.length;i++)
-      fullImg[i] = new Image(277,373);
-      fullImg[0].src="images/events.jpg";
-      fullImg[0].src="images/me.jpg";
-      fullImg[1].src="images/me2.jpg";
-     
-      }
-     
-      var inter=null;
-      var w;
-      var n=1;
-     
-      window.addEventListener("load",page_load,false);
-     
-      function page_load() {
-      setInterval("display()",3000);
-     
-      }
-      function display() {
-      //choose the corresponding full picture to display
-      document.getElementById("imgCover").src=fullImg[n].src;
-      n++;
-      if(n>=6) n=0;
-     
-      
-          </script> 
+          <script language="JavaScript"> 
+        var i = 0; var path = new Array(); // LIST OF IMAGES 
+        path[0] = "Image/me.png";
+        path[1] = "Image/events.jpeg"; 
+        function swapImage() { document.slide.src = path[i];
+         if(i < path.length - 1) i++; else i = 0; setTimeout("swapImage()",3000); } 
+        window.onload=swapImage; </script>
+        <img height="200" name="slide" src="me.png" width="300" />
+      </div>
+      <div class="column 2">
+        <div class="sidebar">
+        
+        <h3>tweet feed</h3>
+        <h4>@Metic Lion</h4>
+        <h5>Nov 17, 2019</h5>
+        <p>I had an amazing time at smashout, thank you 
+@ChewSSB
+ 
+@hanukkahjambore
+  for an amazing event. It was really fun to implement the player cards for every game. Shoutout to the streamers for an amazing job, this weekend. Hopefully I’ll see y’all around too soon.<br /></p>
+</div>
+            
 </body>
