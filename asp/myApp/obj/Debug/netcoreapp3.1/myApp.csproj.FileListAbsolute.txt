@@ -1,0 +1,10 @@
+/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/bin/Debug/netcoreapp3.1/myApp.deps.json
+/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/bin/Debug/netcoreapp3.1/myApp.runtimeconfig.json
+/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/bin/Debug/netcoreapp3.1/myApp.runtimeconfig.dev.json
+/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/bin/Debug/netcoreapp3.1/myApp.dll
+/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/bin/Debug/netcoreapp3.1/myApp.pdb
+/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/obj/Debug/netcoreapp3.1/myApp.csprojAssemblyReference.cache
+/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/obj/Debug/netcoreapp3.1/myApp.AssemblyInfoInputs.cache
+/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/obj/Debug/netcoreapp3.1/myApp.AssemblyInfo.cs
+/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/obj/Debug/netcoreapp3.1/myApp.dll
+/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/obj/Debug/netcoreapp3.1/myApp.pdb
