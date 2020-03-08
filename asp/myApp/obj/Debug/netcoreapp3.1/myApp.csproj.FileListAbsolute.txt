@@ -8,3 +8,14 @@
 /Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/obj/Debug/netcoreapp3.1/myApp.AssemblyInfo.cs
 /Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/obj/Debug/netcoreapp3.1/myApp.dll
 /Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/obj/Debug/netcoreapp3.1/myApp.pdb
+C:\Users\Michael\Desktop\WebDevSites\asp\myApp\bin\Debug\netcoreapp3.1\myApp.exe
+C:\Users\Michael\Desktop\WebDevSites\asp\myApp\bin\Debug\netcoreapp3.1\myApp.deps.json
+C:\Users\Michael\Desktop\WebDevSites\asp\myApp\bin\Debug\netcoreapp3.1\myApp.runtimeconfig.json
+C:\Users\Michael\Desktop\WebDevSites\asp\myApp\bin\Debug\netcoreapp3.1\myApp.runtimeconfig.dev.json
+C:\Users\Michael\Desktop\WebDevSites\asp\myApp\bin\Debug\netcoreapp3.1\myApp.dll
+C:\Users\Michael\Desktop\WebDevSites\asp\myApp\bin\Debug\netcoreapp3.1\myApp.pdb
+C:\Users\Michael\Desktop\WebDevSites\asp\myApp\obj\Debug\netcoreapp3.1\myApp.csprojAssemblyReference.cache
+C:\Users\Michael\Desktop\WebDevSites\asp\myApp\obj\Debug\netcoreapp3.1\myApp.AssemblyInfoInputs.cache
+C:\Users\Michael\Desktop\WebDevSites\asp\myApp\obj\Debug\netcoreapp3.1\myApp.AssemblyInfo.cs
+C:\Users\Michael\Desktop\WebDevSites\asp\myApp\obj\Debug\netcoreapp3.1\myApp.dll
+C:\Users\Michael\Desktop\WebDevSites\asp\myApp\obj\Debug\netcoreapp3.1\myApp.pdb

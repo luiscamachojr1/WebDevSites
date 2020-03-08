@@ -8,24 +8,31 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "/Users/luiscamacho/.nuget/packages/": {}
+    "C:\\Users\\Michael\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/myApp.csproj",
+      "projectUniqueName": "C:\\Users\\Michael\\Desktop\\WebDevSites\\asp\\myApp\\myApp.csproj",
       "projectName": "myApp",
-      "projectPath": "/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/myApp.csproj",
-      "packagesPath": "/Users/luiscamacho/.nuget/packages/",
-      "outputPath": "/Users/luiscamacho/Documents/GitHub/WebDevSites/asp/myApp/obj/",
+      "projectPath": "C:\\Users\\Michael\\Desktop\\WebDevSites\\asp\\myApp\\myApp.csproj",
+      "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Michael\\Desktop\\WebDevSites\\asp\\myApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/luiscamacho/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Michael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -56,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
